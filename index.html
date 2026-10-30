@@ -106,10 +106,10 @@ body{font-family:var(--font-body);background:var(--vc-cream);color:var(--vc-dark
 /* BOOKS */
 .vc-books{background:var(--vc-cream);}
 .vc-books-header{margin-bottom:52px;}
-.vc-books-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;}
+.vc-books-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:900px;}
 .vc-book-card{background:var(--vc-white);border:1px solid rgba(61,140,122,.1);border-radius:4px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,border-color .25s,box-shadow .25s;}
 .vc-book-card:hover{transform:translateY(-4px);border-color:rgba(61,140,122,.25);box-shadow:0 12px 40px rgba(26,74,66,.08);}
-.vc-book-cover{width:100%;aspect-ratio:4/3;overflow:hidden;}
+.vc-book-cover{width:100%;aspect-ratio:794/1123;overflow:hidden;background:#F6F3EC;}
 .vc-book-cover img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transition:transform .3s;}
 .vc-book-card:hover .vc-book-cover img{transform:scale(1.04);}
 .vc-book-body{padding:18px 16px;flex:1;display:flex;flex-direction:column;}
@@ -227,8 +227,8 @@ body{font-family:var(--font-body);background:var(--vc-cream);color:var(--vc-dark
   <div class="vc-hero-visual">
     <div class="vc-hero-card">
       <p class="vc-hero-card-label">Vital Care · Funes, Santa Fe</p>
-      <div class="vc-hero-stat"><div class="vc-hero-stat-num">+9</div><div class="vc-hero-stat-label">años de experiencia en evaluaciones</div></div>
-      <div class="vc-hero-stat"><div class="vc-hero-stat-num">+100</div><div class="vc-hero-stat-label">informes realizados</div></div>
+      <div class="vc-hero-stat"><div class="vc-hero-stat-num">+10</div><div class="vc-hero-stat-label">años de experiencia en evaluaciones</div></div>
+      <div class="vc-hero-stat"><div class="vc-hero-stat-num">+1000</div><div class="vc-hero-stat-label">informes realizados</div></div>
       <div class="vc-hero-stat"><div class="vc-hero-stat-num">100%</div><div class="vc-hero-stat-label">informes personalizados</div></div>
     </div>
   </div>
@@ -274,7 +274,7 @@ body{font-family:var(--font-body);background:var(--vc-cream);color:var(--vc-dark
     <div class="vc-about-text">
       <p class="section-eyebrow">Quién soy</p>
       <h2 class="section-title">Lic. Noelia Poy</h2>
-      <p class="section-lead">Soy psicóloga especializada en evaluación diagnóstica, con más de 9 años de experiencia en espacios clínicos, laborales y educativos.</p>
+      <p class="section-lead">Soy psicóloga especializada en evaluación diagnóstica, con más de 10 años de experiencia en espacios clínicos, laborales y educativos.</p>
       <p class="section-lead-italic" style="margin-top:16px;">Vital Care nace de una idea muy importante: evaluar para comprender, comprender para cuidar. Porque cuando entendemos lo que está pasando, dejamos de sentirnos perdidos. Nuestro objetivo es brindarte claridad, orientación y herramientas concretas a través de evaluaciones profesionales, cuidadas y humanas.</p>
       <div class="vc-about-credentials">
         <div class="vc-credential"><div class="vc-credential-dot"></div><p class="vc-credential-text">Licenciada en Psicología · Mat. 7663</p></div>
@@ -318,23 +318,22 @@ body{font-family:var(--font-body);background:var(--vc-cream);color:var(--vc-dark
   </div>
 </section>
 
-<!-- RECURSOS HOTMART -->
+<!-- RECURSOS -->
 <section class="vc-section vc-books" id="recursos">
   <div class="vc-books-header">
     <p class="section-eyebrow">Recursos</p>
     <h2 class="section-title">Cuadernillos <em>psicoeducativos</em></h2>
     <p class="section-lead">Además de mi trabajo clínico y organizacional, creo cuadernillos psicoeducativos — materiales pensados para familias, pacientes y profesionales de la salud que necesitan información clara, práctica y con respaldo profesional.</p>
-    <p class="section-lead-italic" style="margin-top:16px;">Podés encontrar todos mis recursos disponibles en Hotmart.</p>
-    <a href="https://go.hotmart.com/S105819109L" target="_blank" class="btn-primary" style="margin-top:32px;display:inline-block;">Ver recursos en Hotmart →</a>
+    <p class="section-lead-italic" style="margin-top:16px;">Son gratuitos: pedí el que necesites por WhatsApp y te lo envío.</p>
   </div>
-  <div class="vc-books-grid" style="display:none">
+  <div class="vc-books-grid">
 
     <div class="vc-book-card">
       <div class="vc-book-cover"><img src="cuad_mente.jpg" alt="¿Por qué tu mente no para?"></div>
       <div class="vc-book-body">
         <div class="vc-book-badge-row"><span class="vc-book-badge badge-free">Gratuito</span></div>
         <p class="vc-book-name">¿Por qué tu mente no para?</p>
-        <p class="vc-book-audience">Guía sobre estrés, ansiedad y regulación emocional</p>
+        <p class="vc-book-audience">Guía sobre estrés, ansiedad y regulación emocional · 22 páginas</p>
         <p class="vc-book-price">Gratis</p>
         <a class="vc-book-btn btn-book-free" href="https://wa.me/543413508828?text=Hola%20Noelia!%20Quiero%20el%20cuadernillo%20gratuito%20%22%C2%BFPor%20qu%C3%A9%20tu%20mente%20no%20para%3F%22" target="_blank">
           <svg class="btn-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.484 2 12.017c0 1.987.547 3.885 1.5 5.514L2 22l4.604-1.479A9.953 9.953 0 0012 22c5.523 0 10-4.484 10-10.017S17.523 2 12 2z"/></svg>
@@ -344,57 +343,29 @@ body{font-family:var(--font-body);background:var(--vc-cream);color:var(--vc-dark
     </div>
 
     <div class="vc-book-card">
-      <div class="vc-book-cover"><img src="cuad_escolar.jpg" alt="Guía Contexto Escolar"></div>
-      <div class="vc-book-body">
-        <div class="vc-book-badge-row"><span class="vc-book-badge badge-paid">De pago</span></div>
-        <p class="vc-book-name">Guía de Redacción de Informes en Contexto Escolar</p>
-        <p class="vc-book-audience">Para psicólogos/as escolares y psicopedagogos/as</p>
-        <p class="vc-book-price">$25.000</p>
-        <a class="vc-book-btn btn-book-paid" href="https://wa.me/543413508828?text=Hola%20Noelia!%20Quiero%20comprar%20la%20Gu%C3%ADa%20en%20Contexto%20Escolar%20%2425.000" target="_blank">
-          <svg class="btn-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.484 2 12.017c0 1.987.547 3.885 1.5 5.514L2 22l4.604-1.479A9.953 9.953 0 0012 22c5.523 0 10-4.484 10-10.017S17.523 2 12 2z"/></svg>
-          Quiero comprarlo
-        </a>
-      </div>
-    </div>
-
-    <div class="vc-book-card">
-      <div class="vc-book-cover"><img src="cuad_diagnosticos.jpg" alt="Guía 100 ideas"></div>
-      <div class="vc-book-body">
-        <div class="vc-book-badge-row"><span class="vc-book-badge badge-paid">De pago</span></div>
-        <p class="vc-book-name">Guía de Redacción de Informes Diagnósticos (100 ideas)</p>
-        <p class="vc-book-audience">Psicodiagnóstico · Psicolaboral · Neurocognitiva</p>
-        <p class="vc-book-price">$45.000</p>
-        <a class="vc-book-btn btn-book-paid" href="https://wa.me/543413508828?text=Hola%20Noelia!%20Quiero%20comprar%20la%20Gu%C3%ADa%20100%20ideas%20%2445.000" target="_blank">
-          <svg class="btn-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.484 2 12.017c0 1.987.547 3.885 1.5 5.514L2 22l4.604-1.479A9.953 9.953 0 0012 22c5.523 0 10-4.484 10-10.017S17.523 2 12 2z"/></svg>
-          Quiero comprarlo
-        </a>
-      </div>
-    </div>
-
-    <div class="vc-book-card">
       <div class="vc-book-cover"><img src="cuad_adolescentes.jpg" alt="¿Es normal esto o me tiene que preocupar?"></div>
       <div class="vc-book-body">
-        <div class="vc-book-badge-row"><span class="vc-book-badge badge-paid">De pago</span></div>
+        <div class="vc-book-badge-row"><span class="vc-book-badge badge-free">Gratuito</span></div>
         <p class="vc-book-name">¿Es normal esto o me tiene que preocupar?</p>
-        <p class="vc-book-audience">Guía psicoeducativa para familias con adolescentes</p>
-        <p class="vc-book-price">$35.000</p>
-        <a class="vc-book-btn btn-book-paid" href="https://wa.me/543413508828?text=Hola%20Noelia!%20Quiero%20comprar%20%22%C2%BFEs%20normal%20esto%3F%22%20%2435.000" target="_blank">
+        <p class="vc-book-audience">Guía psicoeducativa para familias con adolescentes · 20 páginas</p>
+        <p class="vc-book-price">Gratis</p>
+        <a class="vc-book-btn btn-book-free" href="https://wa.me/543413508828?text=Hola%20Noelia!%20Quiero%20el%20cuadernillo%20gratuito%20%22%C2%BFEs%20normal%20esto%20o%20me%20tiene%20que%20preocupar%3F%22" target="_blank">
           <svg class="btn-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.484 2 12.017c0 1.987.547 3.885 1.5 5.514L2 22l4.604-1.479A9.953 9.953 0 0012 22c5.523 0 10-4.484 10-10.017S17.523 2 12 2z"/></svg>
-          Quiero comprarlo
+          Quiero este cuadernillo
         </a>
       </div>
     </div>
 
     <div class="vc-book-card">
-      <div class="vc-book-cover"><img src="cuad_antes.jpg" alt="Antes y Después"></div>
+      <div class="vc-book-cover"><img src="cuad_antes.jpg" alt="Antes y después de tu evaluación psicológica"></div>
       <div class="vc-book-body">
-        <div class="vc-book-badge-row"><span class="vc-book-badge badge-paid">De pago</span></div>
-        <p class="vc-book-name">Antes y Después de tu Evaluación Diagnóstica</p>
-        <p class="vc-book-audience">Para personas que van a evaluarse</p>
-        <p class="vc-book-price">$20.000</p>
-        <a class="vc-book-btn btn-book-paid" href="https://wa.me/543413508828?text=Hola%20Noelia!%20Quiero%20comprar%20%22Antes%20y%20Despu%C3%A9s%20de%20tu%20Evaluaci%C3%B3n%22%20%2420.000" target="_blank">
+        <div class="vc-book-badge-row"><span class="vc-book-badge badge-free">Gratuito</span></div>
+        <p class="vc-book-name">Antes y después de tu evaluación psicológica</p>
+        <p class="vc-book-audience">Una guía para personas que van a evaluarse · 19 páginas</p>
+        <p class="vc-book-price">Gratis</p>
+        <a class="vc-book-btn btn-book-free" href="https://wa.me/543413508828?text=Hola%20Noelia!%20Quiero%20el%20cuadernillo%20gratuito%20%22Antes%20y%20despu%C3%A9s%20de%20tu%20evaluaci%C3%B3n%20psicol%C3%B3gica%22" target="_blank">
           <svg class="btn-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.484 2 12.017c0 1.987.547 3.885 1.5 5.514L2 22l4.604-1.479A9.953 9.953 0 0012 22c5.523 0 10-4.484 10-10.017S17.523 2 12 2z"/></svg>
-          Quiero comprarlo
+          Quiero este cuadernillo
         </a>
       </div>
     </div>
